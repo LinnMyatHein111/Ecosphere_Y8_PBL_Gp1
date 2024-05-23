@@ -1,0 +1,93 @@
+
+/* Donation shopping section */
+.donate-header {
+    margin-bottom: 50px;
+}
+.wishlist-ic:focus {
+    background-color: plum;
+    color: white;
+}
+nav{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar-brand span {
+    color:rgb(16, 227, 206);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+p{
+    font-size: 20px;
+}
+.card-holder {
+    width: 100%;
+    height: auto;
+}
+.card {
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+}
+.shop-card {
+    width: 100%;
+    height: auto;
+}
+.money_box button:hover{
+    background-color: aquamarine;
+}
+.money_box button:focus{
+    background-color: aquamarine;
+}
+.submit_btn:hover{
+    background-color: aquamarine;
+}
+/*Responsive Start Desktop view*/
+@media screen and (min-width:768px){
+    .tb-view-shop {
+        display: none;
+    }
+}
+/*Responsive Start Tablet view*/
+@media screen and (max-width:768px){
+    .shop-carousel {
+        display: none;
+    }
+    .hero {
+        height: 400px;
+    }
+}
+/*Mobile view responsive start*/
+@media screen and (max-width:435px){
+    .shop-card .card-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .shop-card {
+        height: 400px;
+        text-align: center;
+    }
+    .shop-card .card-body {
+        height: 300px;
+    }
+    .icon-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        left: 250px;
+        bottom: -200px;
+    }
+    .shop-card-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 300px;
+    }
+    .shop-card-content img {
+        width: 200px;
+        height: 200px;
+    }
+}

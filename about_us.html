@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere | About Us</title>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="Image_final_pbl/Web-logo.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="demo_6.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: lightseagreen;font-size: 18px;" >
+        <a class="navbar-brand ms-5 me-5" href="#"><span class="navbar-text" style="font-size: 25px;">EcoSphere</span></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3" >
+                    <a class="nav-link" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" >About Us</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" >Our Work<i class="bi bi-caret-down-fill"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="species.html">Species</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="take_action.html">Take Action</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="donation.html" >Donate</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Modal-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: lightseagreen;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav end-->
+    <!--Intro-->
+    <div class="container-fluid p-0" style="margin-top: 60px; font-weight: bold;">
+        <div class="row" data-aos="fade-up">
+            <div class="intro_container col-sm-7">
+                <h1 style="font-weight: bold; color: white; font-size: 40px;">About Us</h1>
+            </div>
+            <div class="p-0">
+                <img src="Image_final_pbl/about_us_intro.jpg" width="100%">
+            </div>
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--Who we are-->
+    <div class="container">
+        <div class="justify-content-center">
+            <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+                <h1>Who we are</h1>
+            </div>
+            <script>AOS.init();</script>
+            <div style="padding: 40px;" data-aos="fade-up">
+                <p>For more than 60 years, Ecosphere has worked to help people and nature thrive.</p>
+                <p>As the world's leading conservation organization, Ecosphere works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.</p>
+            </div>
+            <script>AOS.init();</script>
+            <div class="mb-5" style="text-align: center;" data-aos="fade-up">
+                <h3>Our Team</h3>
+            </div>
+            <script>AOS.init();</script>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 me-3 ms-3" data-aos="fade-up">
+                    <div style="border-bottom: 2px solid none; border-radius: 20px; box-shadow: 0px 0px 5px 5px lightgray;">
+                        <img src="Image_final_pbl/linn_myat_hein.png" width="100%" height="100%">
+                        <p class="p-3" style="text-align: center;">Linn Myat Hein</p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 me-3 ms-3" data-aos="fade-up">
+                    <div style="border-bottom: 2px solid none; border-radius: 20px; box-shadow: 0px 0px 5px 5px lightgray;">
+                        <img src="Image_final_pbl/shin_thant_aung.png" width="100%">
+                        <p class="p-3" style="text-align: center;">Shin Thant Aung</p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 me-3 ms-3" data-aos="fade-up">
+                    <div style="border-bottom: 2px solid none; border-radius: 20px; box-shadow: 0px 0px 5px 5px lightgray;">
+                        <img src="Image_final_pbl/la_yaung_myint_mo.png" width="100%">
+                        <p class="p-3" style="text-align: center;">La Yaung Myint Mo</p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    <!--How we work-->
+    <div class="container mt-5">
+        <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+            <h1>How we work</h1>
+        </div>
+        <script>AOS.init();</script>
+        <h2 class="mt-5 mb-3" style="text-align: center;" data-aos="fade-up">For Nature, For People, Forever</h2>
+        <script>AOS.init();</script>
+        <div style="padding: 40px;" data-aos="fade-up">
+            <p class=>EcoSphere works to help local communities conserve the natural resources they depend upon; transform markets and policies toward sustainability; and protect and restore species and their habitats. Our efforts ensure that the value of nature is reflected in decision-making from a local to a global scale.</p>
+            <p class="mt-5">EcoSphere connects cutting-edge conservation science with the collective power of our partners in the field, more than one million supporters in the United States and five million globally, as well as partnerships with communities, companies, and governments.</p>
+            <p class="mt-5">Today, human activities put more pressure on nature than ever before, but it's also people who have the power to change this trajectory. Together, we can address the greatest threats to life on this planet and protect the natural resources that sustain and inspire us.</p>
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--Our goals-->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div style="padding: 0px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+                <h1>Our Goals</h1>
+            </div>
+            <script>AOS.init();</script>
+            <div class="row" style="padding: 0px 40px 40px 40px;">
+                <p class="mt-5" data-aos="fade-up">Recognizing that the problems facing our planet are increasingly more complex and urgent, EcoSphere focuses its work on six ambitious goals. Through this integrative approach, we can challenge the planet's greatest threats and ensure a healthy future for people and nature.</p>
+                <div class="col-sm-4 d-flex mt-5" data-aos="fade-up">
+                    <img src="Image_final_pbl/cloud.svg" class="me-4">
+                    <p>Create a climate-resillient and zero-carbon world</p>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-4 d-flex mt-5" data-aos="fade-up">
+                    <img src="Image_final_pbl/footprint.svg" class="me-4">
+                    <p>Rebuild food systems to nourish people and nature</p>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-4 d-flex mt-5" data-aos="fade-up">
+                    <img src="Image_final_pbl/tree.svg" class="me-4">
+                    <p>Conserve the world's most important forests</p>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-4 d-flex mt-5" data-aos="fade-up">
+                    <img src="Image_final_pbl/waves.svg" class="me-4">
+                    <p>Achieve healthy oceans and nature-positive sesscapes</p>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-4 d-flex mt-5" data-aos="fade-up">
+                    <img src="Image_final_pbl/droplet.svg" class="me-4">
+                    <p>Protect freshwater resources and landscapes</p>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-4 d-flex mt-5" data-aos="fade-up">
+                    <img src="Image_final_pbl/paw.svg" class="me-4">
+                    <p>Protect the wildlife and their natural habitats</p>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    <!--Our Values-->
+    <div class="container">
+        <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+            <h1>Our Values</h1>
+        </div>
+        <script>AOS.init();</script>
+        <div style="padding: 40px;" data-aos="fade-up">
+            <p>We bear witness to the accelerating decline of nature and our climate, with serious consequences for life on Earth, including our own.</p>
+            <p class="mt-4"><strong>Our vision is to build a future in which people live in harmony with nature.</strong> To deliver this mission, we work to conserve and restore biodiversity, the web that supports all life on Earth; to reduce humanity's environmental footprint; and to ensure the sustainable use of natural resources to support current and future generations.</p>
+            <p class="mt-4">We celebrate and respect diversity in nature and among the people, partners, and communities with whom we work. <strong>Across the many cultures and individuals that represent EcoSphere, we are unified by one mission, one brand, and one common set of values:</strong> </p>
+            <ul style="font-size: 20px;">
+                <li><strong>Courage:</strong> We demonstrate courage through our actions, we work for change where it's needed, and we inspire people and institutions to tackle the greatest threats to nature and the future of the planet, which is our home.</li>
+                <li><strong>Integrity:</strong> We live the principles we call on others to meet. We act with integrity, accountability and transparency, and we rely on facts and science to guide us and to ensure we learn and evolve.</li>
+                <li><strong>Respect:</strong> We honor the voices and knowledge of the people and communities that we serve, and we work to secure their rights to a sustainable future.</li>
+                <li><strong>Collaboration:</strong> We deliver impact at the scale of the challenges we face through the power of collective action and innovation.</li>
+            </ul>
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--TOGETHER POSSIBLE-->
+    <div class="container">
+        <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+            <h1>TOGETHER POSSIBLE</h1>
+        </div>
+        <script>AOS.init();</script>
+        <div class="row" data-aos="fade-up">
+            <div class="col-sm-5" style="padding:  40px 40px 10px 40px;">
+                <p>The good news is we also have an unparalleled opportunity for positive change the science is clearer, awareness is greater, and innovation more powerful than ever before.</p>
+                <p>We can redefine our relationship with nature but we need to work together.</p>
+                <p>Partnering with EcoSphere on sustainability and collaborating with others whether at a local or a global level can deliver results and profile that would not otherwise possible.</p>
+            </div>
+            <div class="col-sm-7" data-aos="fade-up">
+                <div class="m-5">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/f0d2kyUZhX8?si=T9fICUr8JntjTgCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <script>AOS.init();</script>
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--Our Partners-->
+    <div class="container mt-3">
+        <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+            <h1>Our Partners</h1>
+        </div>
+        <div class="row justify-content-center me-2 ms-2">
+            <div class="col-sm-3 me-5 ms-5 mt-5" style="border: 1px solid black; box-shadow: 0px 0px 10px 10px lightgray;" data-aos="fade-up">
+                <img src="Image_final_pbl/tream.jpg" width="100%" height="100%">
+            </div>
+            <script>AOS.init();</script>
+            <div class="col-sm-3 me-5 ms-5 mt-5" style="border: 1px solid black; box-shadow: 0px 0px 10px 10px lightgray;" data-aos="fade-up">
+                <img src="Image_final_pbl/living_lake.jpg" width="100%" height="100%">
+            </div>
+            <script>AOS.init();</script>
+            <div class="col-sm-3 me-5 ms-5 mt-5" style="border: 1px solid black; box-shadow: 0px 0px 10px 10px lightgray;" data-aos="fade-up">
+                <img src="Image_final_pbl/the_gordon.jpg" width="100%" height="100%">
+            </div>
+            <script>AOS.init();</script>
+            <div class="col-sm-3 me-5 ms-5 mt-5" style="border: 1px solid black; box-shadow: 0px 0px 10px 10px lightgray;" data-aos="fade-up">
+                <img src="Image_final_pbl/center_social.jpg" width="100%" height="100%">
+            </div>
+            <script>AOS.init();</script>
+            <div class="col-sm-3 me-5 ms-5 mt-5" style="border: 1px solid black; box-shadow: 0px 0px 10px 10px lightgray;" data-aos="fade-up">
+                <img src="Image_final_pbl/climate_valture.jpg" width="100%" height="100%">
+            </div>
+            <script>AOS.init();</script>
+            <div class="col-sm-3 me-5 ms-5 mt-5" style="border: 1px solid black; box-shadow: 0px 0px 10px 10px lightgray;" data-aos="fade-up">
+                <img src="Image_final_pbl/biodiversity_gonomics.jpg" width="100%" height="100%">
+            </div>
+            <script>AOS.init();</script>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+            <h1>FAQ</h1>
+        </div>
+        <div class="row mt-5" style="font-size: 20px;">
+            <div class="col-md-12">
+                <div class="accordion accordion-flush" id="accordion-parent">
+                    <div class="acoordion-item mt-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="border-bottom: 2px solid black;" data-bs-toggle="collapse" data-bs-target="#accordion1"><p>Why we create this web page?</p></button>
+                        </h2>
+                        <div class="collapse accordion-collapse" id="accordion1" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body" style="background-color: lightseagreen;">
+                                The reason for creating this is environmental issues often lack the attention and understanding they deserve. So, we would like to provide a platform to educate people about various environmental challenges. Raising awareness is the first step toward inspiring action and creating a more environmentally conscious society by offering donation.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acoordion-item mt-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="border-bottom: 2px solid black;" data-bs-toggle="collapse" data-bs-target="#accordion2"><p>What are the biggest environmental challenges we face today?</p></button>
+                        </h2>
+                        <div class="collapse accordion-collapse" id="accordion2" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body" style="background-color: lightseagreen;">
+                                Climate change, biodiversity loss, pollution, deforestation, water scarcity, and waste management are some of the critical issues.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acoordion-item mt-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="border-bottom: 2px solid black;" data-bs-toggle="collapse" data-bs-target="#accordion3"><p>How can individuals help protect the environment?</p></button>
+                        </h2>
+                        <div class="collapse accordion-collapse" id="accordion3" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body" style="background-color: lightseagreen;">
+                                People can reduce their carbon footprint, conserve water, recycle and reduce waste, use energy-efficient products, support renewable energy, and advocate for environmental policies.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acoordion-item mt-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="border-bottom: 2px solid black;" data-bs-toggle="collapse" data-bs-target="#accordion4"><p>How can I get involved in environmental conservation efforts in my community?</p></button>
+                        </h2>
+                        <div class="collapse accordion-collapse" id="accordion4" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body" style="background-color: lightseagreen;">
+                                Volunteer for local conservation groups, participate in clean-up events, support environmental education programs, advocate for sustainable policies, and practice sustainable living in your daily life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="acoordion-item mt-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="border-bottom: 2px solid black;" data-bs-toggle="collapse" data-bs-target="#accordion5"><p>How can I live a more sustainable lifestyle?</p></button>
+                        </h2>
+                        <div class="collapse accordion-collapse" id="accordion5" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body" style="background-color: lightseagreen;">
+                                 Practice recycling, composting, reduce water usage, support sustainable businesses, buy local and organic products, and advocate for environmental policies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5" data-aos="fade-up">
+                    <a href="contact_us.html" style="font-size: 20px;">Do you have more question? Contact Us!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="height: 100%; background-color: lightseagreen; margin-top: 150px;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-5" >
+                    <h2>Subscribe for news update!</h2>
+                    <div class="form-floating mt-4 d-flex" style="width: 100%; background-color: darkcyan; border: none; border-radius: 10px; box-shadow: 0px 0px 5px 5px teal;">
+                        <input for="email" type="email" class="form-control m-1" placeholder="Enter email" name="email">
+                        <label class="form-label m-1" id="email">Email address</label>
+                        <button type="submit" class="btn" style="background-color: darkcyan; font-size: 20px; border: none;" onclick="alert('Our news update will be send to your Email!')">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav" style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html" style="font-size: 20px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html" style="font-size: 20px;">Donation</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav"  style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="take_action.html" style="font-size: 20px;" >Take Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reference.html" style="font-size: 20px;">Reference</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-1" style="border-top: 2px solid darkseagreen;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="mt-5" style="text-align: center;">Contact with us</h2>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="ms-5 me-5" style="font-size: 40px; color: blue;"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: lightblue;"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: black;"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2 class="mt-5">Ecosphere</h2>
+                            <span style="font-weight: bold; display: block;">Myanmar</span>
+                            <span>Pyi Street, Yangon, Myanmar</span>
+                            <span style="font-weight: bold; display: block;">United State of America</span>
+                            <span>24th Street, Washington, USA</span>
+                        </div>
+                         <div class="col-sm-3 me-3">
+                            <h2 class="mt-5">Contact Us</h2>
+                            <span style="font-weight: bold; display: block;">Our Hot-line Phone Number</span>
+                            <span>0984849984</span>
+                            <span style="font-weight: bold; display: block;">Our Eamil address</span>
+                            <span>mya@ecosphere.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" style="text-align: center; border-top: 2px solid darkseagreen;">
+                <p class="mt-3" style="font-size: medium;">&copy;Copyright 2024. All rights reserved. Devolope by EcoSphere Organization.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

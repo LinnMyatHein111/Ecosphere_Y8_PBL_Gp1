@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosphere | People</title>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="Image_final_pbl/Web-logo.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="demo_3.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: lightseagreen;font-size: 18px;" >
+        <a class="navbar-brand ms-5 me-5" href="#"><span class="navbar-text" style="font-size: 25px;">EcoSphere</span></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3" >
+                    <a class="nav-link" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" >About Us</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" >Our Work<i class="bi bi-caret-down-fill"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="species.html">Species</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="take_action.html">Take Action</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="donation.html" >Donate</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Modal-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: lightseagreen;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav end-->
+    <!--Intro-->
+    <div class="container-fluid p-0" style="margin-top: 62px; font-weight: bold;">
+        <div class="row" data-aos="fade-up">
+            <div class="intro_container col-sm-7">
+                <h1 style="font-weight: bold">PEOPLE & COMMUNITIES</h1>
+                <p style="font-weight: bold;">EcoSphere's collaborative approach to conservation is grounded in the benefits nature provides to people and the role of communities as stewards of their own land and waters</p>
+            </div>
+            <img src="Image_final_pbl/people_intro.jpg">
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--Sec paragraph-->
+    <div class="container" style="margin-top: 100px;">
+        <div class="row m-5">
+            <div class="mb-3" data-aos="fade-up">
+                <p>People depend on the natural world its forests, fisheries and wildlife for their ways of life. Conserving species, protecting habitats, and keeping our climate and environment healthy is good for all of us.</p>
+            </div>
+            <script>AOS.init();</script>
+            <div class="mb-3" data-aos="fade-up">
+                <p>EcoSphere's commitment to conservation means working in some of the most challenging places on Earth. Places where the protection of nature and its benefits for people can be an anchor for stability and opportunity.</p>
+            </div>
+            <script>AOS.init();</script>
+            <div class="mb-3" data-aos="fade-up">
+                <p>EcoSphere has long understood that the people who live in the places we work are critical leaders in conservation. Over time, our work with people has supported community efforts and led to transformative social and environmental results. This is a socially inclusive conservation approach. Together, we find practical and beneficial ways for both people and nature to thrive.</p>
+            </div>
+            <script>AOS.init();</script>
+        </div>
+    </div>
+    <!--How we works-->
+    <div class="container">
+        <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+            <h1>How we work</h1>
+        </div>
+        <script>AOS.init();</script>
+        <p class="mt-5 pe-5 ps-5" data-aos="fade-up">
+            Around the world, EcoSphere supports community management of natural resources
+            and helps them to protect those resources against outside threats. 
+            This collaborative conservation is grounded in the benefits nature provides to people and the role of 
+            Indigenous people and local communities as stewards of their own lands.
+        </p>
+        <script>AOS.init();</script>
+        <div class="row mt-4 box">
+            <div class="d-flex justify-content-center" style="flex-wrap: wrap;">
+                <div class="col-sm-3 mt-5 mb-5 me-3 ms-3 image" style="border-bottom: none; box-shadow: 0px 0px 10px 10px lightgrey; border-radius: 20px;" data-aos="fade-up">
+                    <img src="Image_final_pbl/peoeple's right.jpg">
+                    <div class="p-3">
+                        <h3 style="color: #2980B9;">ADVOCATING FOR INDIGENOUS PEOPLES</h3>
+                        <p class="p-2">
+                            EcoSphere addresses governance and empowers Indigenous peoples and 
+                            local communities to have a meaningful seat at the table and benefit 
+                            directly from conservation efforts. This collaborative conservation 
+                            approach affirms and secures customary land and legal rights of local 
+                            communities and Indigenous peoples.
+                        </p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 mt-5 mb-5 me-3 ms-3 image" style="border-bottom: none; box-shadow: 0px 0px 10px 10px lightgrey; border-radius: 20px;" data-aos="fade-up">
+                    <img src="Image_final_pbl/empowering_woman.jpg">
+                    <div class="p-3">
+                        <h3 style="color: #2980B9;">EMPOWERING WOMAN</h3>
+                        <p class="p-2">
+                            Women and girls often play a central role in the use and management of natural resources,
+                            yet they are often excluded from participating in community decisions about how those resources should be used. 
+                            Ecosphere helps eliminate cultural, legal, and other barrier to full engagement, 
+                            helping women and girls gain better access to education and economic decision-making opportunities 
+                            so they can improve their lives and help lead environmental change in their communities.
+                        </p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 mt-5 mb-5 me-3 ms-3 image" style="border-bottom: none; box-shadow: 0px 0px 10px 10px lightgrey; border-radius: 20px;" data-aos="fade-up">
+                    <img src="Image_final_pbl/humantarian.jpg">
+                    <div class="p-3">
+                        <h3 style="color: #2980B9;">COLLABORATING ON HUMANITARIAN</h3>
+                        <p class="p-2">
+                            With partners, EcoSphere launches innovative conservation projects that merge conservation and human well-being, 
+                            and are cornerstones of international development. Together, 
+                            we work with communities to develop sustainable practices that translate to increased income, 
+                            improved livelihoods, greater health, gender equity, and better managed and more accessible natural resources.
+                        </p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 mt-5 mb-5 me-3 ms-3 image" style="border-bottom: none; box-shadow: 0px 0px 10px 10px lightgrey; border-radius: 20px;" data-aos="fade-up">
+                    <img src="Image_final_pbl/social_policies.jpg">
+                    <div class="p-3">
+                        <h3 style="color: #2980B9;">ADVANCING SOCIAL POLICIES</h3>
+                        <p class="p-2">
+                            For its entire history,
+                            EcoSphere has joined a group of conservation organizations at the forefront of efforts to incorporate human rights 
+                            and needs into our work. The most important inhabitants of any forest, river basin, or seascape are its people, 
+                            and the policies WWF has embraced are central to making sure that all people have access and opportunity to better 
+                            their lives in the places that we work.
+                        </p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 mt-5 mb-5 me-3 ms-3 image" style="border-bottom: none; box-shadow: 0px 0px 10px 10px lightgrey; border-radius: 20px;" data-aos="fade-up">
+                    <img src="Image_final_pbl/safeguards_framework.jpg">
+                    <div class="p-3">
+                        <h3 style="color: #2980B9;">IMPLEMENTING SAFEGUARDS FRAMEWORK</h3>
+                        <p class="p-2">
+                            EcoSphere's Environmental and Social Safeguards Framework is designed to ensure meaningful community engagement,
+                            which results in better conservation, and to identify and promptly address risks associated with our work.
+                        </p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-3 mt-5 mb-5 me-3 ms-3 image" style="border-bottom: none; box-shadow: 0px 0px 10px 10px lightgrey; border-radius: 20px;" data-aos="fade-up">
+                    <img src="Image_final_pbl/community_development.jpg">
+                    <div class="p-3">
+                        <h3 style="color: #2980B9;">SUPPORTING COMMUNITY DEVELOPMENT</h3>
+                        <p class="p-2">
+                            In many of the places we work,
+                            people are directly reliant on nature for their health and economic well-being.
+                            By securing health services,
+                            supporting sustainable livelihoods and helping communities build their capacity to manage their needs and opportunities,
+                            we build a foundation for conservation that helps both people and nature.
+                        </p>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    <!--How you can help-->
+    <div class="container-fluid pb-5" style="background-color: ivory;">
+        <div class="container pb-5">
+            <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+                <h1>How you can help</h1>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-sm-5 mt-5 mb-4" style="background-color: white; border: none; box-shadow: 0px 0px 10px 10px lightgrey;" data-aos="fade-up">
+                    <a href="take_action.html" style="text-decoration: none;">
+                        <div class="row">
+                            <div class="col-sm-6 p-3">
+                                <h3 style="color: #2980B9; text-align: start;">Take Action</h3>
+                                <p style="color: black;">Join us to make change. Speak up for species and places through Action centre.</p>
+                            </div>
+                            <div class="col-sm-6 p-0 m-0">
+                                <img src="Image_final_pbl/elephants.jpg" width="100%">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-5 mt-5 mb-4" style="background-color: white; border: none; box-shadow: 0px 0px 10px 10px lightgrey;" data-aos="fade-up">
+                    <a href="donation.html" style="text-decoration: none;">
+                        <div class="row">
+                            <div class="col-sm-6 p-3">
+                                <h3 style="color: #2980B9; text-align: start;">Donate to EcoSphere</h3>
+                                <p style="color: black;">Donate to Ecosphere's global conservation efforts or donate while our buying products</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="Image_final_pbl/plush_turtle.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Footer-->
+    <footer style="height: 100%; background-color: lightseagreen; margin-top: 150px;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-5" >
+                    <h2>Subscribe for news update!</h2>
+                    <div class="form-floating mt-4 d-flex" style="width: 100%; background-color: darkcyan; border: none; border-radius: 10px; box-shadow: 0px 0px 5px 5px teal;">
+                        <input for="email" type="email" class="form-control m-1" placeholder="Enter email" name="email">
+                        <label class="form-label m-1" id="email">Email address</label>
+                        <button type="submit" class="btn" style="background-color: darkcyan; font-size: 20px; border: none;" onclick="alert('Our news update will be send to your Email!')">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav" style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html" style="font-size: 20px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html" style="font-size: 20px;">Donation</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav"  style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="take_action.html" style="font-size: 20px;" >Take Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reference.html" style="font-size: 20px;">Reference</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-1" style="border-top: 2px solid darkseagreen;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="mt-5" style="text-align: center;">Contact with us</h2>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="ms-5 me-5" style="font-size: 40px; color: blue;"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: lightblue;"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: black;"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2 class="mt-5">Ecosphere</h2>
+                            <span style="font-weight: bold; display: block;">Myanmar</span>
+                            <span>Pyi Street, Yangon, Myanmar</span>
+                            <span style="font-weight: bold; display: block;">United State of America</span>
+                            <span>24th Street, Washington, USA</span>
+                        </div>
+                         <div class="col-sm-3 me-3">
+                            <h2 class="mt-5">Contact Us</h2>
+                            <span style="font-weight: bold; display: block;">Our Hot-line Phone Number</span>
+                            <span>0984849984</span>
+                            <span style="font-weight: bold; display: block;">Our Eamil address</span>
+                            <span>mya@ecosphere.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" style="text-align: center; border-top: 2px solid darkseagreen;">
+                <p class="mt-3" style="font-size: medium;">&copy;Copyright 2024. All rights reserved. Devolope by EcoSphere Organization.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

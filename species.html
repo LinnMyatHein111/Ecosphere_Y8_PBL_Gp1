@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere | Species</title>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="Image_final_pbl/Web-logo.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="demo_5.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <!--Nav-->
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: lightseagreen;font-size: 18px;" >
+        <a class="navbar-brand ms-5 me-5" href="#"><span class="navbar-text" style="font-size: 25px;">EcoSphere</span></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3" >
+                    <a class="nav-link" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" >About Us</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" >Our Work<i class="bi bi-caret-down-fill"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="species.html">Species</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="take_action.html">Take Action</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="donation.html" >Donate</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Modal-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: lightseagreen;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav end-->
+    <!--Intro-->
+    <div class="container-fluid p-0 m-0" style="margin-top: 60px; font-weight: bold;">
+        <div class="row" data-aos="fade-up">
+            <div class="intro_container col-sm-7">
+                <h1 style="font-weight: bold">PROTECTING WILDLIFE SPECIES</h1>
+                <p style="font-weight: bold;">EcoSphere works in unity with many to achieve lasting conservation results. Together, we can protect and restore species and their habitats.</p>
+            </div>
+            <div class="p-0">
+                <img src="Image_final_pbl/sea.jpg" width="100%">
+            </div>
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--Sec paragraph-->
+    <div class="container" style="margin-top: 120px;">
+        <div class="row m-5">
+            <div class="mb-3" data-aos="fade-up">
+                <p>We protect wildlife because they inspire us. But we also focus our efforts on those species like tigers and rhinos whose protection influences and supports the survival of other species or offers the opportunity to protect whole landscapes or marine areas.</p>
+            </div>
+            <script>AOS.init();</script>
+        </div>
+    </div>
+    <!--Marine animals-->
+    <div class="container">
+        <h3 class="pb-3" style="text-align: center; border-bottom: 2px solid black; font-weight: bold;" data-aos="fade-up">MARINE ANIMALS</h3>
+        <script>AOS.init();</script>
+        <div class="col-sm-12 mt-5">
+            <div class="row">
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/sea_lions.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;"> 
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#sea_lions">SEA LIONS</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="sea_lions" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">SEA LIONS</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Sea lions haul out in large colonies on rocks and sandy shores on the Islands. They move into the water to feed and cool off as needed.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Introduced species, such as dogs, carry diseases that can spread to sea lions. They are vulnerable to the effects of climate change on ocean currents, which impacts their fish prey abundance. They are also victims of bycatch in fisheries.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>Sea lions often rest aboard fishing boats, sometimes causing the boats to sink. Fishermen try to prevent them from coming aboard by putting up barbwire as a barrier, but this causes severe injuries to the sea lions. EcoSphere helped support a project on San Cristóbal Island that built and installed two floating bases for sea lions to rest on and a “primary care nursery” for sea lions and other species. Environmental education and communication awareness sessions were offered about the importance of sea lions and the problems with their interaction with the local community. Currently, sea lions are using the floating bases more often and we expect less sea lion injuries and fewer troubles for the boat owners on the island.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/shark.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#sharks">SHARKS</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="sharks" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">SHARKS</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>With fossil records dating back 400 million years, sharks have outlived the dinosaurs and many other forms of life currently on earth. There are more than 1,000 species of sharks and rays, with new species discovered every year.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>The trade in shark fins, driven by demand for an expensive Asian soup, imperils countless shark species, with approximately 100 million sharks slaughtered annually for their fins. Overfishing, spurred by this demand and lacking effective management, exacerbates the crisis. Species like oceanic whitetips, porbeagles, and hammerheads are particularly vulnerable. Pelagic and reef sharks suffer from habitat loss and overfishing, while rays face extinction threats due to their value in the fin trade. Sharks are frequently caught incidentally in fishing gear targeting other species, further contributing to their decline.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>Efforts are underway to improve management of shark and ray fisheries, addressing both responsible management and trade practices. EcoSphere collaborates with over 15 countries, including major fishing nations, to develop national action plans and implement conservation measures. Advocacy extends to regional management organizations for high seas fishing. Innovative solutions like LED lights reduce bycatch, while partnerships facilitate marine protected areas and sustainable tourism. CITES listings regulate international trade, with 43 species currently listed. EcoSphere and TRAFFIC monitor compliance and promote sustainable consumption, aiming to curb demand for shark products and protect these vulnerable species.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/sea_turtle.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#sea_turtle">SEA TURTLE</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="sea_turtle" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">SEA TUTLE</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Seven sea turtle species roam our oceans, dwelling primarily in the sea but visiting shores for nesting. EcoSphere focuses on five: green, hawksbill, loggerhead, leatherback, and olive ridley turtles.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Sea turtles face numerous threats, including overharvesting for food and trade, habitat loss from coastal development, and pollution. Despite international regulations, illegal trade persists, exacerbating population declines of species like greens and hawksbills. Coastal development disrupts nesting beaches, while light pollution disorients hatchlings and onshore activities damage feeding grounds. Climate change disrupts nesting ratios and impacts foraging areas, with warming seas and severe weather events destroying habitats. Pollution, including plastics and fishing gear, poses lethal risks, with ingestion and entanglement leading to fatalities among these vulnerable creatures.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere employs various strategies to combat overharvesting and illegal trade of sea turtles. We engage with local communities, offering alternative livelihoods and awareness campaigns while supporting law enforcement efforts through TRAFFIC. Marine protected areas are advocated for, providing safe habitats, and we conduct research to understand and mitigate climate change impacts. Satellite tracking aids in monitoring turtle movements and informing conservation efforts globally.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/pacific_salmon.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#pacific_salmon">PACIFIC SALMON</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="pacific_salmon" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">PACIFIC SALMON</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Salmon play a major role in many economies. The North Pacific provides the primary source of wild salmon that are harvested commercially and eaten in homes and restaurants all over the world. The Alaska salmon fishery, responsible for around 90% of wild caught salmon in North America, is certified by the Marine Stewardship Council.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Threats to wild Pacific salmon include illegal harvest (poaching), habitat destruction from development and mining activities, dams and other blockages in rivers, unregulated overharvesting, and a rapidly changing climate.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere advocates for oil spill prevention, spill response, and shipping safety measures as a precondition for offshore oil development. EcoSphere promotes the concept of sustainable seafood to fisheries, retailers, and consumers and rewards sustainable fishing practices. We combat illegal fishing, promote well-managed fisheries, and argue for more effective control of farmed salmon. We are working to protect key spawning areas by stopping the creation of Pebble Mine, the largest open-pit mine in North America.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/whale.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#whale">WHALE</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="whale" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">WHALE</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Whales roam throughout all of the world's oceans, communicating with complex and mysterious sounds. Their sheer size amazes us: the blue whale can reach lengths of more than 100 feet and weigh up to 200 tons—as much as 33 elephants.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Warming oceans and loss of sea ice in the Arctic and Antarctic can affect the habitats and food of whales. Large patches of tiny plants and animals that they feed on will likely move or change in abundance as climate change alters seawater temperature, winds, and ocean currents. These changes can mean whales such as humpbacks and blues may have to migrate much further to reach feeding grounds, leaving them with less time to forage for food. The shift in food availability due to climate fluctuations has already hurt the reproductive rates of the endangered North Atlantic right whale.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere is working on an exciting new initiative to promote the conservation of whales and dolphins around the world. The Protecting Whales and Dolphins Initiative focuses on whales and dolphins in marine environments and centers around three main pillars of activities like improved monitoring and mitigation of bycatch in fishing gear reduction of underwater noise and collision risks from shipping and improved protection of critical cetacean habitats used for feeding, breeding, resting, or migration. We're collaborating with other international organizations, providing evidence and tools for other conservation partners to tackle threats and harmful practices, and advocacy that includes targeted awareness raising and communication campaigns with governments and industries.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/dolphins.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#dolphins">DOLPHINS</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="dolphins" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">DOLPHINS</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Dolphins delight us with their playful antics and warm our hearts with their friendly faces. Marine species are the most well-known, but there are several species that live in freshwater rivers. All are air-breathing, warm-blooded mammals that nurse their young. The difference between a dolphin and a porpoise has to do with their appearance: dolphins have longer snouts, bigger mouths, more curved dorsal fins, and longer, leaner bodies than porpoises.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Dolphins face numerous threats worldwide. Habitat degradation from pollution, coastal development, and climate change disrupts their environments. Entanglement in fishing gear, collisions with boats, and illegal hunting pose direct risks to their populations. Noise pollution and disturbance from human activities also impact their behavior and communication. Conservation efforts focus on habitat protection, reducing fishing gear entanglement, and mitigating human-induced disturbances to ensure dolphin survival.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>Helping dolphins involves various actions aimed at mitigating the threats they face and ensuring their well-being. One crucial step is to minimize pollution in their habitats by reducing plastic use, properly disposing of waste, and participating in beach clean-up initiatives. Supporting sustainable fishing practices is vital to prevent dolphins from becoming unintentional bycatch in fishing gear. When boating, being mindful of dolphins in the water and adhering to guidelines to avoid collisions can significantly reduce their harm. Advocating for conservation measures and supporting organizations dedicated to protecting dolphin habitats are essential steps toward their preservation. Lastly, educating others about the challenges dolphins encounter and the significance of conservation efforts can foster greater awareness and support for their protection.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    <!--Primates-->
+    <div class="container" style="margin-top: 100px;">
+        <h3 class="pb-3" style="text-align: center; border-bottom: 2px solid black; font-weight: bold;" data-aos="fade-up">PRIMATES</h3>
+        <script>AOS.init();</script>
+        <div class="col-sm-12 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/chimpanzee.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;"> 
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#chimpanzee">CHIMPANZEE</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="chimpanzee" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">CHIMPANZEE</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Like us, chimps are highly social animals, care for their offspring for years and can live to be over 50. In fact, chimpanzees are our closest cousins; we share about 98% of our genes.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Poaching is another prominent threat. Bushmeat has always been a primary food source in Central and West Africa, but in recent years poaching has become commercialized to satisfy the appetites of wealthy urban residents. Infant chimpanzees are frequently taken alive and sold in cities as pets.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere establishes, strengthens, and manages protected areas in Central and West Africa. In Democratic Republic of Congo, the Central African Republic, Gabon, Cameroon and other countries, we protect chimpanzees through antipoaching and effective law enforcement, help governments establish and manage national parks, monitor chimpanzee populations, encourage sustainable use of forest resources in park buffer zones, build trans-boundary collaboration to develop partnerships between neighboring countries, We also develop chimpanzee-focused ecotourism and work to stop illegal poaching in logging concessions. WWF continues to look for ways to reduce the impact of the bushmeat trade on apes and other endangered species.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/orangutan.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#orangutan">ORANGUTAN</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="orangutan" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">ORANGUTAN</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>The name orangutan means "man of the forest" in the Malay language. In the lowland forests in which they reside, orangutans live solitary existences. They feast on wild fruits like lychees, mangosteens, and figs, and slurp water from holes in trees. They make nests in trees of vegetation to sleep at night and rest during the day. Adult male orangutans can weigh up to 200 pounds.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Orangutans are an easy target for hunters because they're large and slow targets. They are killed for food or in retaliation when they move into agricultural areas and destroy crops. This usually occurs when orangutans can't find the food they need in the forest.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere works in both Borneo and Sumatra to secure well-managed protected areas and wider forest landscapes to connect sub-populations of orangutans. Our work on sustainable production of commodities contributes to the conservation of major orangutan habitats in Borneo and Sumatra. We also monitor orangutan populations, work on ecotourism and provide community based support for orangutan conservation.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/black_spider_monkey.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#spider_monkey">SPIDER MONKEY</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="spider_monkey" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">SPIDER MONKEY</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>The black spider monkey also known as the Guiana or red faced spider monkey is found in eastern South America in areas north of the Amazon River. They are one of seven species of spider monkeys found in Latin America and one of the largest primate species in South America.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>The destruction of tropical rainforests and threats from hunting pose the greatest challenge to the black spider monkey's survival. Because they prefer mature tropical forests and seldom venture into disturbed habitats, these monkeys are especially vulnerable to the effects of forest fragmentation.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>To combat the destruction of the black spider monkey's habitat, EcoSphere works to protect the forests they need to survive. We support the creation and management of protected areas and promote responsible forest management, including Forest Stewardship Council (FSC) certification, outside of protected areas.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/bonobo.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#bonobo">BONOBO</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="bonobo" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">BONOBO</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Bonobos and chimpanzees look very similar and both share 98.7% of their DNA with humans—making the two species our closest living relatives. Bonobos are usually a bit smaller, leaner, and darker than chimpanzees. Their society is also different—bonobo groups tend to be more peaceful and are led by females. They also maintain relationships and settle conflicts through sex. However, bonobo life isn't entirely violence-free; if two groups of bonobos come together, they may engage in serious fighting.</p>
+                                <h2 style="border-bottom: 2px solid black;width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Only part of the bonobo's range lies in protected areas. A growing and moving human population, combined with slash-and-burn agriculture and commercial logging, leaves bonobos outside parks at risk of losing their homes.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>A survey of large mammals in the DRC's Lac Télé-Lac Tumba Landscape revealed a previously unknown population of bonobos, a population that has the highest density and largest group size of the animals anywhere in their range. After this discovery, EcoSphere helped to establish the Lac Tumba-Lediima Nature Reserve, which will help to protect this dwindling species.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/gorilla.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#gorilla">GORILLA</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="gorilla" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">GORILLA</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Gorillas are gentle giants and display many human-like behaviors and emotions, such as laughter and sadness. In fact, gorillas share 98.3% of their genetic code with humans, making them our closest cousins after chimpanzees and bonobos. The largest of the great apes, gorillas are stocky animals with broad chests and shoulders, large, human-like hands, and small eyes set into hairless faces. The two gorilla species live in equatorial Africa, separated by about 560 miles of Congo Basin forest. Each has a lowland and upland subspecies. Gorillas live in family groups of usually five to 10, but sometimes two to more than 50, led by a dominant adult male—or silverback—who holds his position for years.</p>
+                                <h2 style="border-bottom: 2px solid black;width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>The commercial trade in bushmeat, which occurs throughout west and central Africa, is the biggest threat to gorillas today. Apes are being killed primarily to supply high-end demand for meat in urban centers, where the consumption of ape meat is considered to be prestigious amongst the wealthy elite. Although gorillas may constitute only a small proportion of all animals killed for the bushmeat trade, they present easy targets for hunters, and in many areas gorillas are favored by hunters because of the weight of meat they can sell. Gorillas' low reproductive rates means that even low levels of hunting can cause a population decline, which could take many generations to be reversed</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere conducts research into the ecology, distribution, and population biology of gorillas. We also support research into the spread of diseases between humans and gorillas and the natural spread of diseases such as Ebola, as well as disease prevention. Park rangers are often the ones monitoring gorillas, and so WWF and our partners have established a ranger-based monitoring program for mountain gorillas that documented a 17% increase in gorilla numbers in the Virunga Mountains over a 14-year period.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    <!--Big cats-->
+    <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
+        <h3 class="pb-3" style="text-align: center; border-bottom: 2px solid black; font-weight: bold;">BIG CATS</h3>
+        <script>AOS.init();</script>
+        <div class="col-sm-12 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/lions.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;"> 
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#lions">LIONS</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="lions" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">LIONS</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Throughout history, lions have been admired as a symbol of power, strength, and courage. Previously, lions roamed throughout all of Africa and parts of Asia and Europe. However, this mighty species is now found only in fragments of sub-Saharan Africa, along with a critically endangered subpopulation in West Africa and a small population of Asiatic lions in India's Gir National Park. Three of the five largest lion populations can be found in Tanzania.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Lions'ranges have been dramatically reduced due to human land use and climate change. Today they inhabit only 8% of their former range. Many lions live outside of protected areas, and as their habitat has become more fragmented, many lion populations have become increasingly isolated into protected areas. The increase in unsustainable development also leaves herbivores with little space for grazing in the savanna, and they often must compete with livestock for resources. As a result, populations of lions'natural prey are in decline. Fragmentation of habitat leaves lions in isolated areas, making it harder for them to breed. When lion movements are restricted, they are prone to inbreeding, which decreases genetic diversity. This can cause disease to spread more rapidly between prides. Fragmented habitats also increase lions’ vulnerability, as they are forced to disperse through human-dominated landscapes to find other lion populations and resources.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>Working with and alongside communities is critical to ensure the long-term protection of lions. In KAZA, local partners are helping communities build more effective kraals, including reinforcing traditional kraals to make them stronger and prevent livestock from breaking out when a carnivore is nearby. Some partners employ local community members to serve as community guardians, helping to monitor carnivore and lion movement around villages and respond to incidents of human-wildlife conflict. These actions will help to decrease the predation of livestock and retaliatory killings of lions.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/jaguar.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#jaguar">JAGUAR</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="jaguar" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">JAGUAR</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Jaguars are mighty cats most easily recognized by the bold rosettes generously spotted across their tawny-colored coats. They have thick, stocky legs and short, round ears. The jaguar has the strongest of all the felines. The name “jaguar” originates from the Tupi and Guarani languages of South America from the word yaguareté, or “true, fierce beast and he who kills in one leap.” The majestic jaguar is a symbol of power for many Latin-American cultures, it represents the power of nature and is seen as the protector of the rainforest.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>Jaguars are apex predators mainly active during the night and require a large amount of territory to survive. Unfortunately, deforestation and agricultural activities have been encroaching on jaguar territory, slowly shrinking the range of jaguars and isolating populations from one another. It is estimated that jaguars have lost approximately 50% of their historic range, with a 20% decline in a period of just 14 years, and have gone extinct in El Salvador and Uruguay. Their habitats are becoming increasingly fragmented, meaning patches of habitat are decreasing in size and becoming increasingly isolated and less connected. The lands once ruled by jaguars are being destroyed by logging, large-scale agriculture, ranchland, and urban areas. Habitat fragmentation makes it incredibly difficult for these felines to hunt and mate, which poses a major threat to their population numbers and survival.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p></p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/snow_leopard.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#snow_leopard">SHOW LEOPARD</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="snow_leopard" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">SNOW LEOPARD</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>Snow leopards have evolved to live in some of the harshest conditions on Earth. Their thick white-gray coat spotted with large black rosettes blends in perfectly with Asia's steep and rocky, high mountains. Because of their incredible natural camouflage, rendering them almost invisible in their surroundings, snow leopards are often referred to as the “ghost of the mountains.”</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>The snow leopard habitat range continues to decline from the impacts of the climate crisis, human disturbance, and increased use of grazing space. This development increasingly fragments the historic range of the species.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>EcoSphere developed and launched Third Pole GeoLab, an interactive web-based tool and database for snow leopard conservation, climate change, and water security issues in Asia's high mountains, as part of our USAID-funded project, Conservation and Adaptation in Asia's High Mountain Communities and Landscapes.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/tiger_laying.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#tiger">TIGER</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="tiger" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">TIGER</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>After a century of decline, overall wild tiger numbers are starting to tick upward. Based on the best available information, tiger populations are stable or increasing in India, Nepal, Bhutan, Russia and China. About 5,574 tigers remain in the wild, according to the Global Tiger Forum, but much more work is needed to protect this species if we are to secure its future in the wild. In some areas, including much of Southeast Asia, tigers are still in crisis and declining in number.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>One of the world's largest, and most uniquely-adapted, tiger populations are found in the Sundarbans—a large mangrove forest area shared by India and Bangladesh on the coast of the Indian Ocean. It is also the only coastal mangrove tiger habitat in the world. These mangrove forests harbor a variety of species, including tigers, and protect coastal regions from storm surges and wind damage. However, rising sea levels caused by climate change threaten to wipe out these forests and the last remaining habitat of this tiger population. According to a WWF study, without mitigation efforts, projected sea-level rise—about a foot by 2070—could destroy nearly the entire Sundarbans tiger habitat.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>Tigers need secure areas to thrive, and our work to protect and connect their fragile habitat is based on rigorous scientific analysis. WWF has chosen places to focus its resources based on the best available science and where tigers have the best chance of recovery and long-term persistence. The locations encompass tiger corridors that link tiger sites within landscapes. Our work includes building local capacity to manage protected areas, coordinating with partners to manage core tiger areas and corridors, and addressing human-wildlife conflict and the impacts of infrastructure development in tiger landscapes. To ensure effective conservation management of tiger sites, the Conservation Assured Tiger Standards (CA|TS) provide a minimum set of standards to encourage the long-term success of tiger conservation and best practices in these areas. Nine of the 13 tiger range countries are currently implementing CA|TS or in discussions on registering, and two sites have achieved CA|TS approval by meeting all the required standards.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-2" data-aos="fade-up">
+                    <img src="Image_final_pbl/amur_leopard.jpg" width="100%" style="border: none; border-radius: 100px; box-shadow: 0px 0px 5px 5px lightgray;">
+                    <p class="mt-2 hg_words" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#amur_leopard">AMUR LEOPARD</p>
+                </div>
+                <!--Modal-->
+                <div class="modal" id="amur_leopard" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: lightseagreen;">
+                                <h3 class="modal-title me-3" style="font-weight: bolder;">AMUR LEOPARD</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body m-3">
+                                <h2 style="border-bottom: 2px solid black; width: 15%; margin-bottom: 10px;">FACTS</h2>
+                                <p>People usually think of leopards in the savannas of Africa but in the Russian Far East, a rare subspecies has adapted to life in the temperate forests that make up the northern-most part of the species'range. Similar to other leopards, the Amur leopard can run at speeds of up to 37 miles per hour. This incredible animal has been reported to leap more than 19 feet horizontally and up to 10 feet vertically.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 21%; margin-top: 30px; margin-bottom: 10px;">THREATS</h2>
+                                <p>The Amur leopard is poached largely for its beautiful, spotted fur. In 1999, an undercover investigation team recovered a female and a male Amur leopard skin, which were being sold for $500 and $1,000 respectively in the village of Barabash, not far from the Kedrovaya Pad reserve in Russia. Agriculture and villages surround the forests where the leopards live. As a result the forests are relatively accessible, making poaching a problem—not only for the leopards themselves, but also for important prey species, such as roe deer, sika deer and hare, which are hunted by the villagers both for food and cash.</p>
+                                <h2 style="border-bottom: 2px solid black; width: 48%; margin-top: 30px; margin-bottom: 10px;">WHAT WE ARE DOING</h2>
+                                <p>With such a small population left, the loss of each Amur leopard puts the species at greater risk of extinction. EcoSphere supports antipoaching work in all Amur leopard habitat in the Russian Far East and in known leopard localities in northeast China. EcoSphere implements programs to stop the illegal trade in Amur leopard parts. Together with TRAFFIC, the world’s largest wildlife trade monitoring network, we help governments enforce domestic and international trade restrictions on Amur leopard products. Amur leopards are listed on CITES Appendix I, prohibiting all commercial trade in the species.</p>
+                            </div>
+                            <div class="modal-footer" style="background-color: lightseagreen;">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    <!--How you can help-->
+    <div class="container-fluid pb-5" style="background-color: ivory;">
+        <div class="container pb-5">
+            <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black" data-aos="fade-up">
+                <h1>How you can help</h1>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-sm-5 mt-5 mb-4" style="background-color: white; border: none; box-shadow: 0px 0px 10px 10px lightgrey;" data-aos="fade-up">
+                    <a href="take_action.html" style="text-decoration: none;">
+                        <div class="row">
+                            <div class="col-sm-6 p-3">
+                                <h3 style="color: #2980B9; text-align: start;">Take Action</h3>
+                                <p style="color: black;">Join us to make change. Speak up for species and places through Action centre.</p>
+                            </div>
+                            <div class="col-sm-6 p-0 m-0">
+                                <img src="Image_final_pbl/elephants.jpg" width="100%">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <script>AOS.init();</script>
+                <div class="col-sm-5 mt-5 mb-4" style="background-color: white; border: none; box-shadow: 0px 0px 10px 10px lightgrey;" data-aos="fade-up">
+                    <a href="donation.html" style="text-decoration: none;">
+                        <div class="row">
+                            <div class="col-sm-6 p-3">
+                                <h3 style="color: #2980B9; text-align: start;">Donate to EcoSphere</h3>
+                                <p style="color: black;">Donate to Ecosphere's global conservation efforts or donate while our buying products</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="Image_final_pbl/plush_turtle.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <script>AOS.init();</script>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Footer-->
+    <footer style="height: 100%; background-color: lightseagreen; margin-top: 150px;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-5" >
+                    <h2>Subscribe for news update!</h2>
+                    <div class="form-floating mt-4 d-flex" style="width: 100%; background-color: darkcyan; border: none; border-radius: 10px; box-shadow: 0px 0px 5px 5px teal;">
+                        <input for="email" type="email" class="form-control m-1" placeholder="Enter email" name="email">
+                        <label class="form-label m-1" id="email">Email address</label>
+                        <button type="submit" class="btn" style="background-color: darkcyan; font-size: 20px; border: none;" onclick="alert('Our news update will be send to your Email!')">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav" style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html" style="font-size: 20px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html" style="font-size: 20px;">Donation</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav"  style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="take_action.html" style="font-size: 20px;" >Take Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reference.html" style="font-size: 20px;">Reference</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-1" style="border-top: 2px solid darkseagreen;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="mt-5" style="text-align: center;">Contact with us</h2>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="ms-5 me-5" style="font-size: 40px; color: blue;"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: lightblue;"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: black;"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2 class="mt-5">Ecosphere</h2>
+                            <span style="font-weight: bold; display: block;">Myanmar</span>
+                            <span>Pyi Street, Yangon, Myanmar</span>
+                            <span style="font-weight: bold; display: block;">United State of America</span>
+                            <span>24th Street, Washington, USA</span>
+                        </div>
+                         <div class="col-sm-3 me-3">
+                            <h2 class="mt-5">Contact Us</h2>
+                            <span style="font-weight: bold; display: block;">Our Hot-line Phone Number</span>
+                            <span>0984849984</span>
+                            <span style="font-weight: bold; display: block;">Our Eamil address</span>
+                            <span>mya@ecosphere.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" style="text-align: center; border-top: 2px solid darkseagreen;">
+                <p class="mt-3" style="font-size: medium;">&copy;Copyright 2024. All rights reserved. Devolope by EcoSphere Organization.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

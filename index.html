@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere | Home</title>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="Image_final_pbl/Web-logo.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="demo_1.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: lightseagreen;font-size: 18px;" >
+        <a class="navbar-brand ms-5 me-5" href="#"><span class="navbar-text" style="font-size: 25px;">EcoSphere</span></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3" >
+                    <a class="nav-link" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" >About Us</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" >Our Work<i class="bi bi-caret-down-fill"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="species.html">Species</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="take_action.html">Take Action</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="donation.html" >Donate</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Modal-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: lightseagreen;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav end-->
+    <!--Intro-->
+    <div class="container-fluid" style="left: 0%; right: 0%;">
+        <div class="row justify-content-center" data-aos="fade-up" style="margin-top: 150px;">
+            <div class="col-sm-5 ms-2 me-2" style="margin-top: 10px;">
+                <img src="Image_final_pbl/Biodiversity.png" style="width: 520px; height: 350px; border: none; border-radius: 20px; box-shadow: 0px 0px 10px 10px lightgrey; width: 100%;">
+            </div>
+            <div class="col-sm-6" style="margin-top: 50px;">
+                <div>
+                    <h1>What is Ecosystem and Biodiversity?</h1>
+                    <p>Ecosystems are interconnected communities of organisms and their environment,
+                        while biodiversity refers to the variety of life within them.
+                        Biodiversity is crucial for ecosystem health,
+                        providing essential services like pollination and nutrient cycling.
+                        Protecting ecosystems and biodiversity is vital for both natural balance and human well-being.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>AOS.init();</script>
+    <div class="container-fluid" style="background-color: ivory;">
+        <!--Who we are-->
+        <div class="container" style="margin-top: 100px;">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black">
+                    <h1>Who we are</h1>
+                    <p>Our mission is to safeguard the richness of Earth's ecosystems by addressing the most urgent threats to biodiversity.</p>
+                </div>
+                <div class="col-sm-6" style="padding: 40px;">
+                    <p>We collaborate with local communities to conserve the natural resources we all depend on and build a future in which people and nature thrive.
+                    Together with partners at all levels, we transform markets and policies toward sustainability, tackle the threats driving the climate crisis, and protect and restore wildlife and their habitats.</p>
+                    <button class="btn" style="background-color: darkcyan; font-size: 20px;"><a href="take_action.html" style="text-decoration: none; color: black;">More way you can help<i class="bi bi-arrow-right-circle ms-2 mt-2"></i></a></button>
+                </div>
+                <div class="col-sm-6 mt-3">
+                    <div class="accordion accordion-flush" id="accordion-parent">
+                        <div class="acoordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion1" style="background-color: ivory;"><h2><span style="color: rgb(117, 191, 124);">6</span> continents</h2></button>
+                            </h2>
+                            <div class="collapse accordion-collapse" id="accordion1" data-bs-parent="#accordion-parent" style="background-color: lightseagreen;">
+                                <div class="accordion-body">
+                                    <p>EcoSphere organization is actively working in six continents to help people and nature thrive</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" style="background-color: ivory;"><h2><span style="color: rgb(117, 191, 124);">350</span> citie and counties</h2></button>
+                            </h2>
+                            <div class="collapse accordion-collapse" id="accordion2" data-bs-parent="#accordion-parent" style="background-color: lightseagreen;">
+                                <div class="accordion-body">
+                                    <p>More than 350 cities and counties have joined with WWF, its partners, and other leaders for America is All In, a coalition committed to reducing emissions by 50% by 2030</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acoordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" style="background-color: ivory;"><h2><span style="color: rgb(117, 191, 124);">1.3 MILLION</span> members</h2></button>
+                            </h2>
+                            <div class="collapse accordion-collapse" id="accordion3" data-bs-parent="#accordion-parent" style="background-color: lightseagreen;">
+                                <div class="accordion-body">
+                                    <p>More than one million members around the world that support EcoSphere converstion efforts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>AOS.init();</script>
+        <!--Our Goals-->
+        <div class="container" style="margin-top: 100px; padding-bottom: 100px;">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black">
+                    <h1>Our Goals</h1>
+                </div>
+                <div class="col-sm-4 d-flex mt-5">
+                    <img src="Image_final_pbl/cloud.svg" class="me-4">
+                    <p>Create a climate-resillient and zero-carbon world</p>
+                </div>
+                <div class="col-sm-4 d-flex mt-5">
+                    <img src="Image_final_pbl/footprint.svg" class="me-4">
+                    <p>Rebuild food systems to nourish people and nature</p>
+                </div>
+                <div class="col-sm-4 d-flex mt-5">
+                    <img src="Image_final_pbl/tree.svg" class="me-4">
+                    <p>Conserve the world's most important forests</p>
+                </div>
+                <div class="col-sm-4 d-flex mt-5">
+                    <img src="Image_final_pbl/waves.svg" class="me-4">
+                    <p>Achieve healthy oceans and nature-positive sesscapes</p>
+                </div>
+                <div class="col-sm-4 d-flex mt-5">
+                    <img src="Image_final_pbl/droplet.svg" class="me-4">
+                    <p>Protect freshwater resources and landscapes</p>
+                </div>
+                <div class="col-sm-4 d-flex mt-5">
+                    <img src="Image_final_pbl/paw.svg" class="me-4">
+                    <p>Protect the wildlife and their natural habitats</p>
+                </div>
+            </div>
+        </div>
+        <script>AOS.init();</script>
+    </div>
+    <!--Our succes impact-->
+    <div class="container" style="margin-top: 100px;">
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div style="padding: 40px 40px 10px 40px; border-bottom: 2px solid black">
+                <h1>Our success impact</h1>
+            </div>
+            <div class="col-sm-3 mt-5">
+                <img src="Image_final_pbl/Forest.jpg" style="width: 100%; height: 80%;">
+                <p class="p-3" style="background-color: mediumaquamarine;">NEW LEGISLATION TO PROTECT FOREST</p>
+            </div>
+            <div class="col-sm-3 mt-5">
+                <img src="Image_final_pbl/Rhino.jpg" style="width: 100%; height: 80%;">
+                <p class="p-3" style="background-color: mediumaquamarine;">NEW HOPE FOR ARFRICAN RHINOS</p>
+            </div>
+            <div class="col-sm-3 mt-5">
+                <img src="Image_final_pbl/Tiger.jpg" style="width: 100%; height: 80%;">
+                 <p class="p-3" style="background-color: mediumaquamarine;">RESTOREING THE TIGER'S AMUR HEILONG HOME</p>
+            </div>
+             <div class="col-sm-3 mt-5">
+                <img src="Image_final_pbl/Plant_trees.jpg" style="width: 100%; height: 80%;">
+                <p class="p-3" style="background-color: mediumaquamarine;">PLANT 7.6 MILLION TREES AROUND THE WORLD</p>
+            </div> 
+        </div>
+    </div>
+    <script>AOS.init();</script>
+    <!--Footer-->
+    <footer style="height: 100%; background-color: lightseagreen; margin-top: 150px;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-5" >
+                    <h2>Subscribe for news update!</h2>
+                    <div class="form-floating mt-4 d-flex" style="width: 100%; background-color: darkcyan; border: none; border-radius: 10px; box-shadow: 0px 0px 5px 5px teal;">
+                        <input for="email" type="email" class="form-control m-1" placeholder="Enter email" name="email">
+                        <label class="form-label m-1" id="email">Email address</label>
+                        <button type="submit" class="btn" style="background-color: darkcyan; font-size: 20px; border: none;" onclick="alert('Our news update will be send to your Email!')">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav" style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html" style="font-size: 20px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html" style="font-size: 20px;">Donation</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav"  style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="take_action.html" style="font-size: 20px;" >Take Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reference.html" style="font-size: 20px;">Reference</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-1" style="border-top: 2px solid darkseagreen;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="mt-5" style="text-align: center;">Contact with us</h2>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="ms-5 me-5" style="font-size: 40px; color: blue;"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: lightblue;"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: black;"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2 class="mt-5">Ecosphere</h2>
+                            <span style="font-weight: bold; display: block;">Myanmar</span>
+                            <span>Pyi Street, Yangon, Myanmar</span>
+                            <span style="font-weight: bold; display: block;">United State of America</span>
+                            <span>24th Street, Washington, USA</span>
+                        </div>
+                         <div class="col-sm-3 me-3">
+                            <h2 class="mt-5">Contact Us</h2>
+                            <span style="font-weight: bold; display: block;">Our Hot-line Phone Number</span>
+                            <span>0984849984</span>
+                            <span style="font-weight: bold; display: block;">Our Eamil address</span>
+                            <span>mya@ecosphere.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" style="text-align: center; border-top: 2px solid darkseagreen;">
+                <p class="mt-3" style="font-size: medium;">&copy;Copyright 2024. All rights reserved. Devolope by EcoSphere Organization.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

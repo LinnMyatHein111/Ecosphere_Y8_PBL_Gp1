@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere | Donation</title>
+</head>
+<body>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="Image_final_pbl/Web-logo.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="demo_7.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Catamaran:wght@100..900&family=Freeman&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: lightseagreen;font-size: 18px;" >
+        <a class="navbar-brand ms-5 me-5" href="#"><span class="navbar-text" style="font-size: 25px;">EcoSphere</span></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3" >
+                    <a class="nav-link" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" >About Us</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" >Our Work<i class="bi bi-caret-down-fill"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="species.html">Species</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="take_action.html">Take Action</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="donation.html" >Donate</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Modal-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: lightseagreen;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav end-->
+    <div class="container" style="margin-top: 160px;">
+        <div class="row">
+            <div class="col-sm-5 me-5">
+                <h1 class="mb-4" data-aos="fade-up">Donate to EcoSphere</h1><script>AOS.init();</script>
+                <img src="Image_final_pbl/a_lot_elephants.jpg" width="100%" data-aos="fade-up">
+                <p class="mt-3" data-aos="fade-up">Together, we can protect vulnerable wildlife, conserve vital habitats, and build a future where people live in harmony with nature.</p>
+                <p class="mt-4" data-aos="fade-up">Make your donation to EcoSphere today and power our global conservation solutions.</p>
+                <p class="mt-4" data-aos="fade-up">Your donation makes you a member of WWF. A gift of $1,000+ or $80+/month makes you a Partner in Conservation.</p>
+                <div class="mt-5" style="background-color: white; border: 1px solid black;">
+                    <h3 class="mt-5" style=" text-align: center;" data-aos="fade-up">Your support will help WWF:</h3>
+                    <div class="col-sm-9 d-flex mt-5 ms-auto me-auto" data-aos="fade-up">
+                        <img src="Image_final_pbl/cloud.svg" class="me-3">
+                        <p class="pb-3 pt-3" style="border-bottom: 1px solid black;">Create a climate-resillient and zero-carbon world</p>
+                    </div>
+                    <div class="col-sm-9 d-flex mt-5 ms-auto me-auto" data-aos="fade-up">
+                        <img src="Image_final_pbl/footprint.svg" class="me-3">
+                        <p class="pb-3 pt-3" style="border-bottom: 1px solid black;">Rebuild food systems to nourish people and nature</p>
+                    </div>
+                    <div class="col-sm-9 d-flex mt-5 ms-auto me-auto" data-aos="fade-up">
+                        <img src="Image_final_pbl/tree.svg" class="me-3">
+                        <p class="pb-3 pt-3" style="border-bottom: 1px solid black;">Conserve the world's most important forests</p>
+                    </div>
+                    <div class="col-sm-9 d-flex mt-5 ms-auto me-auto" data-aos="fade-up">
+                        <img src="Image_final_pbl/waves.svg" class="me-3">
+                        <p class="pb-3 pt-3" style="border-bottom: 1px solid black;">Achieve healthy oceans and nature-positive sesscapes</p>
+                    </div>
+                    <div class="col-sm-9 d-flex mt-5 ms-auto me-auto" data-aos="fade-up">
+                        <img src="Image_final_pbl/droplet.svg" class="me-3">
+                        <p class="pb-3 pt-3" style="border-bottom: 1px solid black;">Protect freshwater resources and landscapes</p>
+                    </div>
+                    <div class="col-sm-9 d-flex mt-5 ms-auto me-auto" data-aos="fade-up">
+                        <img src="Image_final_pbl/paw.svg" class="me-3">
+                        <p class="pb-3 pt-3" style="border-bottom: 1px solid black;">Protect the wildlife and their natural habitats</p>
+                    </div>
+                </div>
+            </div>
+            <script>AOS.init();</script>
+            <div class="col-sm-6">
+                <div class="container">
+                    <div class="container mt-5" style="background-color: white; border: 1px solid black;">
+                        <ul class="nav nav-pills justify-content-center mt-1" data-aos="fade-up">
+                            <li class="nav-item me-2 mt-3" style="font-size: 30px; border: 2px solid black; border-radius: 8px; color: black;"><a href="#give_once" class="nav-link active" data-bs-toggle="tab">Give once</a></li>
+                            <li class="nav-item ms-2 active mt-3" style="font-size: 30px; border: 2px solid black; border-radius: 8px; color: black;"><a href="#give_monthly" class="nav-link" data-bs-toggle="tab">Give monthly</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="give_once">
+                                <div class="mt-4" style="background-color: mediumaquamarine; text-align: center; border: none; border-radius: 20px;">
+                                    <p class="p-3" data-aos="fade-up"><i>Thanks for making a lasting difference for nature</i></p><script>AOS.init();</script>
+                                </div>
+                                <div class="row pb-5 money_box" style="border-bottom: 1px solid black;">
+                                    <div class="col-sm-4 mt-3" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pb-3 pt-3" style="font-size: 20px; padding-left: 53px; padding-right: 53px;">$25</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-3" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pb-3 pt-3" style="font-size: 20px; padding-left: 53px; padding-right: 53px;">$50</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-3" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pb-3 pt-3" style="font-size: 20px; padding-left: 53px; padding-right: 53px;">$75</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-5" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pe-5 ps-5 pb-3 pt-3" style="font-size: 20px;">$100</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-5" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pe-5 ps-5 pb-3 pt-3" style="font-size: 20px;">$150</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-5" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pe-5 ps-5 pb-3 pt-3" style="font-size: 20px;">$200</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                </div>
+                                <div class="mt-5 mb-5">
+                                    <h3 data-aos="fade-up">Your information</h3><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="name" class="form-control form-control" style="border: 2px solid black; height: 60px;" placeholder="Your Name"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="email" name="email" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="Email Address"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="country" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="Country"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="city" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="City"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="state" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="State"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="password" name="zip" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="ZIP CODE"><script>AOS.init();</script>
+                                </div>
+                                <div class="p-3">
+                                    <h3 data-aos="fade-up">Be a part of our community</h3><script>AOS.init();</script>
+                                    <p class="mt-3" data-aos="fade-up">We'll send you updates on the impact of your donation and how you can protect nature through activism, donating, events, and more. You can unsubscribe at any time.</p><script>AOS.init();</script>
+                                </div>
+                                <div class="mt-3 p-3">
+                                    <h5 data-aos="fade-up">I would like to get (or continue to get) email updates:</h5><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="radio" name="yes" id="yes" class="form-check-input border-1 border-dark"><script>AOS.init();</script>
+                                    <label data-aos="fade-up" for="yes" class="form-check-label" style="font-size: 20px;">Yes</label><br><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="radio" name="no" id="no" class="form-check-input border-1 border-dark"><script>AOS.init();</script>
+                                    <label data-aos="fade-up" for="no" class="form-check-label" style="font-size: 20px;">No</label><script>AOS.init();</script>
+                                </div>
+                                <h3 class="mt-3 pb-3" style="text-align: center; border-bottom: 1px solid black;" data-aos="fade-up">Payment method</h3><script>AOS.init();</script>
+                                <div class="row mt-5 mb-5" data-aos="fade-up">
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                                        <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                                    </div>
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                                        <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                                    </div>
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                                        <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                                    </div>
+                                </div>
+                                <script>AOS.init();</script>
+                                <div class="mb-5" style="text-align: center;" data-aos="fade-up">
+                                    <button type="submit" style="font-size: 25px; border-radius: 20px;" class="ps-5 pe-5 pt-3 pb-3 submit_btn" onclick="alert('Thanks for your donation!')">Donate</button>
+                                </div>
+                                <script>AOS.init();</script>
+                            </div>
+                        </div>
+                        <script>AOS.init();</script>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="give_monthly">
+                                <div class="mt-4" style="background-color: mediumaquamarine; text-align: center; border: none; border-radius: 20px;">
+                                    <p class="p-3" data-aos="fade-up"><i>Giving monthly is an easy, efficient, and effective way to protect the planet</i></p><script>AOS.init();</script>
+                                </div>
+                                <div class="row pb-5" style="border-bottom: 1px solid black;">
+                                    <div class="col-sm-4 mt-3" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pb-3 pt-3" style="font-size: 20px; padding-left: 53px; padding-right: 53px;">$25/mo</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-3" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pb-3 pt-3" style="font-size: 20px; padding-left: 53px; padding-right: 53px;">$50/mo</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-3" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pb-3 pt-3" style="font-size: 20px; padding-left: 53px; padding-right: 53px;">$75/mo</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-5" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pe-5 ps-5 pb-3 pt-3" style="font-size: 20px;">$10/mo</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-5" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pe-5 ps-5 pb-3 pt-3" style="font-size: 20px;">$150/mo</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4 mt-5" style="text-align: center;" data-aos="fade-up">
+                                        <button type="button" class="pe-5 ps-5 pb-3 pt-3" style="font-size: 20px;">$200/mo</button>
+                                    </div>
+                                    <script>AOS.init();</script>
+                                </div>
+                                <div class="mt-5 mb-5">
+                                    <h3 data-aos="fade-up">Your information</h3><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="name" class="form-control form-control" style="border: 2px solid black; height: 60px;" placeholder="Your Name"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="email" name="email" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="Email Address"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="country" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="Country"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="city" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="City"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="text" name="state" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="State"><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="password" name="zip" class="form-control form-control mt-3 mb-3" style="border: 2px solid black; height: 60px;" placeholder="ZIP CODE"><script>AOS.init();</script>
+                                </div>
+                                <div class="p-3">
+                                    <h3 data-aos="fade-up">Be a part of our community</h3><script>AOS.init();</script>
+                                    <p data-aos="fade-up" class="mt-3">We'll send you updates on the impact of your donation and how you can protect nature through activism, donating, events, and more. You can unsubscribe at any time.</p><script>AOS.init();</script>
+                                </div>
+                                <div class="mt-3 p-3">
+                                    <h5 data-aos="fade-up">I would like to get (or continue to get) email updates:</h5><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="radio" name="yes" id="yes" class="form-check-input border-1 border-dark"><script>AOS.init();</script>
+                                    <label data-aos="fade-up" for="yes" class="form-check-label" style="font-size: 20px;">Yes</label><br><script>AOS.init();</script>
+                                    <input data-aos="fade-up" type="radio" name="no" id="no" class="form-check-input border-1 border-dark"><script>AOS.init();</script>
+                                    <label data-aos="fade-up" for="no" class="form-check-label" style="font-size: 20px;">No</label><script>AOS.init();</script>
+                                </div>
+                                <h3 data-aos="fade-up" class="mt-3 pb-3" style="border-bottom: 1px solid black;">Payment method</h3><script>AOS.init();</script>
+                                <div class="row mt-5 mb-5" data-aos="fade-up">
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                                        <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                                        <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                                    </div>
+                                    <script>AOS.init();</script>
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                                        <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                                    </div>
+                                    <script>AOS.init();</script>
+                                </div>
+                                <div class="mb-5" style="text-align: center;">
+                                    <button type="submit" style="font-size: 25px; border-radius: 20px;" class="ps-5 pe-5 pt-3 pb-3" data-aos="fade-up">Donate monthly</button><script>AOS.init();</script>
+                                </div>
+                            </div>
+                        </div>
+                        <script>AOS.init();</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Shopping section start-->
+    <div class="container-fluid donate-header mt-5" data-aos="fade-up">
+        <h3 class="p-3 border-bottom border-2 border-dark">You can also donate while buying our products</h3>
+    </div>
+    <!--Desktop view shop carousel-->
+    <div class="container-fluid shop-carousel" data-aos="fade-up">
+        <div class="carousel slide p-3" id="shop-carousel">
+            <div class="carousel-inner mx-3">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center card-holder">
+                        <div class="card p-0 col-md-2 card-item me-1 ms-4">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/capybara.png" alt="" width="100%" height="230px">
+                                <div class="my-2">
+                                    <p class="m-0">Capybara</p>
+                                    <p class="m-0">21$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3" type="button"><i class="bi bi-heart"></i></button>
+                                <button type="button" class="btn btn-primary shop-btn" data-bs-toggle="modal" data-bs-target="#shop-modal-1">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/dolphin_plushie.png" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Dolphin</p>
+                                    <p class="m-0">18$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary shop-btn" data-bs-toggle="modal" data-bs-target="#shop-modal-2">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/dino.png" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Dinosaur</p>
+                                    <p class="m-0">28$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary shop-btn" data-bs-toggle="modal" data-bs-target="#shop-modal-3">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/plush_turtle.jpg" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Turtle</p>
+                                    <p class="m-0">20$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary shop-btn" data-bs-toggle="modal" data-bs-target="#shop-modal-4">View detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center card-holder">
+                        <div class="card p-0 col-md-2 card-item me-1 ms-4">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/sloth.png" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Sloth</p>
+                                    <p class="m-0">25$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-5">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/wolf.png" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Wolf</p>
+                                    <p class="m-0">28$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-6">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/penguin.png" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Penguin</p>
+                                    <p class="m-0">18$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-7">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/snow_leopard.png" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Snow Leopard</p>
+                                    <p class="m-0">23$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-8">View detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center card-holder">
+                        <div class="card p-0 col-md-2 card-item me-1 ms-4">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/elephant_plush.jpg" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Elephants</p>
+                                    <p class="m-0">$29</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-9">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/black_bears.jpg" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Black Bear</p>
+                                    <p class="m-0">21$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-10">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/whale_plush.jpg" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Whale</p>
+                                    <p class="m-0">25$</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-11">View detail</button>
+                            </div>
+                        </div>
+                        <div class="card p-0 col-md-2 card-item mx-1">
+                            <div class="card-header m-0 p-0 text-center">
+                                <img src="Image_final_pbl/tiger.webp" alt="" width="100%" height="230px">
+                                <div class="my-2 ">
+                                    <p class="m-0">Tiger</p>
+                                    <p class="m-0">$28</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn wishlist-ic me-3"><i class="bi bi-heart"></i></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shop-modal-12">View detail</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Carousel slider arrow-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#shop-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon p-4" style="background-color: rgb(103, 96, 96); border-radius: 40px;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#shop-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon p-4" style="background-color: rgb(103, 96, 96); border-radius: 40px;"></span>
+            </button>
+            <!--Carousel slide arrow-->
+        </div>       
+    </div>
+    <!--Tablet view shop caarousel-->
+    <div class="container-fluid tb-view-shop">
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""><img src="Image_final_pbl/capybara.png" alt="" width="100%" height="300px"></div>
+                    <div class=""> 
+                        <p>Capybara</p>
+                        <p class="m-0">21$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-1">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/dolphin_plushie.png" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Dplphin</p>
+                        <p class="m-0">18$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-2">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/dino.png" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Dinosaur</p>
+                        <p class="m-0">28$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-3">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/plush_turtle.jpg" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Turtle</p>
+                        <p class="m-0">20$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-4">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/sloth.png" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Sloth</p>
+                        <p class="m-0">25$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-5">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/wolf.png" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Wolf</p>
+                        <p class="m-0">28$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-6">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/penguin.png" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Penguin</p>
+                        <p class="m-0">18$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-7">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/snow_leopard.png" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Snow Leopard</p>
+                        <p class="m-0">23$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-8">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/elephant_plush.jpg" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Elephant</p>
+                        <p class="m-0">29$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-9">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/black_bears.jpg" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Black Bear</p>
+                        <p class="m-0">21$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-10">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/whale_plush.jpg" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Whale</p>
+                        <p class="m-0">25$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <View type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-11">View detail</button>
+            </div>
+        </div>
+        <div class="card shop-card mt-5" data-aos="fade-up">
+            <div class="card-body ">
+                <div class="row shop-card-content">
+                    <div class=""> <img src="Image_final_pbl/tiger.webp" alt="" width="100%" height="300px"> </div>
+                    <div class=""> 
+                        <p>Tiger</p>
+                        <p class="m-0">28$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0">
+                <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                <button type="button" class="btn btn-primary" id="add-to-cart" data-bs-toggle="modal" data-bs-target="#shop-modal-12">View detail</button>
+            </div>
+        </div>
+    </div>
+    <!--Shop info modals-->
+    <div class="modal modal-box" id="shop-modal-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/capybara.png" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">21$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-2" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/dolphin_plushie.png" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">18$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-3" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/dino.png" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">28$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-4" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/plush_turtle.jpg" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">20$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-5" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/sloth.png" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">25$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-6" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/wolf.png" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">28$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-7" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                        <div class="col-sm-12"> <img src="Image_final_pbl/penguin.png" alt="" width="100%" height="400px"></div>
+                    </div>
+                    <p class="m-0">18$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-8" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/snow_leopard.png" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">23$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-9" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/elephant_plush.jpg" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">29$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-10" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/black_bears.jpg" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">21$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-11" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/whale_plush.jpg" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">25$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-box" id="shop-modal-12" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="row mb-2">
+                    <div class="col-sm-12"> <img src="Image_final_pbl/tiger.webp" alt="" width="100%" height="400px"></div>
+                </div>
+                <div>
+                    <p class="m-0">28$</p>
+                    <p>Free delivery</p>
+                    <div class="form-floating my-3">
+                        <input for="add" type="text" class="form-control" placeholder="Enter your Address" name="address" >
+                        <label class="form-label" id="add">Address</label>
+                    </div>
+                    <div class="mt-4" style="text-align: center;">
+                        <p>Payment method</p>
+                    </div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#wave"><img src="Image_final_pbl/wavepay.jpg" width="100%" height="50px" alt="wavepay"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="wave" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#vz"><img src="Image_final_pbl/visa.png" width="100%" height="50px" alt="visa"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="vz" name="payment">
+                        </div>
+                        <div class="col-sm-4" style="text-align: center;">
+                            <label for="#kbz"><img src="Image_final_pbl/kpay.png" width="100%" height="50px" alt="kbz"></label>
+                            <input type="radio" class="form-check-input border-1 border-dark mt-3" id="kbz" name="payment">
+                        </div>
+                    </div>
+                </div>
+                    <span style="font-size: 13px; margin: 0px;">Will arrive at the door after 7~10 days</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn wishlist-ic me-3" id="wishlist-icon"><i class="wl-ic bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart" onclick="alert('Thanks for your purchase!')" data-bs-dismiss="modal">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="height: 100%; background-color: lightseagreen; margin-top: 150px;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-5" >
+                    <h2>Subscribe for news update!</h2>
+                    <div class="form-floating mt-4 d-flex" style="width: 100%; background-color: darkcyan; border: none; border-radius: 10px; box-shadow: 0px 0px 5px 5px teal;">
+                        <input for="email" type="email" class="form-control m-1" placeholder="Enter email" name="email">
+                        <label class="form-label m-1" id="email">Email address</label>
+                        <button type="submit" class="btn" style="background-color: darkcyan; font-size: 20px; border: none;" onclick="alert('Our news update will be send to your Email!')">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav" style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html" style="font-size: 20px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html" style="font-size: 20px;">Donation</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav"  style="text-align: left;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="take_action.html" style="font-size: 20px;" >Take Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reference.html" style="font-size: 20px;">Reference</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-1" style="border-top: 2px solid darkseagreen;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2 class="mt-5" style="text-align: center;">Contact with us</h2>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#" class="ms-5 me-5" style="font-size: 40px; color: blue;"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: lightblue;"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="me-5" style="font-size: 40px; color: black;"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <h2 class="mt-5">Ecosphere</h2>
+                            <span style="font-weight: bold; display: block;">Myanmar</span>
+                            <span>Pyi Street, Yangon, Myanmar</span>
+                            <span style="font-weight: bold; display: block;">United State of America</span>
+                            <span>24th Street, Washington, USA</span>
+                        </div>
+                         <div class="col-sm-3 me-3">
+                            <h2 class="mt-5">Contact Us</h2>
+                            <span style="font-weight: bold; display: block;">Our Hot-line Phone Number</span>
+                            <span>0984849984</span>
+                            <span style="font-weight: bold; display: block;">Our Eamil address</span>
+                            <span>mya@ecosphere.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" style="text-align: center; border-top: 2px solid darkseagreen;">
+                <p class="mt-3" style="font-size: medium;">&copy;Copyright 2024. All rights reserved. Devolope by EcoSphere Organization.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
